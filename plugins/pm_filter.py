@@ -195,7 +195,7 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'❣️ Movies', 'movies'),dupe'),
+            InlineKeyboardButton(f'❣️ Movies', 'movies'),
             InlineKeyboardButton(f'🎁 Tips', 'tips'),
             InlineKeyboardButton(f'📮 Info', 'info')
         ]
