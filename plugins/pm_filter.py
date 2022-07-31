@@ -744,16 +744,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        buttons = [[            
+            InlineKeyboardButton('🔸ɢʀᴏᴜᴘ 1🔸', url='https://t.me/+3SSAvOkxW_hjMDJl'),
+            InlineKeyboardButton('🔸ɢʀᴏᴜᴘ 2🔸', url='https://t.me/+KjgLbxaw_8M4NDA9')
+            ],[ 
+            InlineKeyboardButton('🔗 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔗', url=f'https://t.me/+NqEpYwqvzdIwYWU1')
+            ],[     
+            InlineKeyboardButton('❗️ʜᴇʟᴘ❗️', callback_data='help'),
+            InlineKeyboardButton('❕ᴀʙᴏᴜᴛ❕', callback_data='about')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MWUpdatez'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/OpusTechz')
-            ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
-            ],[
-            InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA')
+            InlineKeyboardButton('🌚 ʙᴏᴛ ᴏᴡɴᴇʀ 👻', url='https://t.me/Ichappi23')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -890,7 +890,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://t.me/AboutAadhi')
+            InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://t.me/Ichappi23')
             ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
