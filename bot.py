@@ -18,7 +18,7 @@ class Bot(Client):
 
     def __init__(self):
         super().__init__(
-            "Elsa",
+            session_name=SESSION,
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
@@ -35,7 +35,6 @@ class Bot(Client):
         await Media.ensure_indexes()
         me = await self.get_me()
         temp.ME = me.id
-        temp.MENTION = me.mention
         temp.U_NAME = me.username
         temp.B_NAME = me.first_name
         self.username = '@' + me.username
